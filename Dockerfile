@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN docker run -itd --name cont-1 ubuntu
 RUN docker attach cont-1
-RUN cd tmp
+WORKDIR tmp
 RUN touch f1
 RUN exit
 RUN docker commit cont-1 InfiniteRoot
