@@ -1,5 +1,5 @@
 FROM alpine
-RUN docker run -itd --name cont-1 alpine
+RUN docker run -itd --name cont-1 alpine /bin/bash
 RUN docker attach cont-1
 RUN cd tmp
 RUN touch f1
