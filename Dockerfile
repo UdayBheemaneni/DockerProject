@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM alpine
 RUN docker run -itd --name cont-1 ubuntu
 RUN docker attach cont-1
 RUN cd tmp
